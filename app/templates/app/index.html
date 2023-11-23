@@ -51,7 +51,7 @@
           </div>
           <div class="post-content">
             <div class="cetagory">
-              <p>Category name</p>
+              <p>Featured Post</p>
             </div>
             <h1>
               {{featured_blog.title}}
@@ -59,7 +59,7 @@
             <p class="des">
              {{featured_blog.content | truncatechars:200}}
             </p>
-            <a class="learn" href="#"
+            <a class="learn" href="{% url "post_page" featured_blog.slug %}"
               >Learn more <span class="material-icons"> trending_flat </span></a
             >
           </div>
